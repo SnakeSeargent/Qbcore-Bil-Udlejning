@@ -1,32 +1,32 @@
-🚗 Køretøjsudlejnings NPC Script til QBCore
+# 🚗 Køretøjsudlejnings NPC Script til QBCore
 
-Velkommen til Køretøjsudlejnings NPC Scriptet til QBCore! Dette script giver spillere mulighed for at leje køretøjer via en NPC placeret på kortet. Du kan tilpasse NPC'ens koordinater, køretøjets spawn lokationer, lejepriser og tilgængelige køretøjer i config.lua filen. Derudover kan spillere få penge tilbage, når de afleverer det lejede køretøj, og mængden kan justeres i Server/main.lua filen.
+Velkommen til **Køretøjsudlejnings NPC Scriptet** til QBCore! Dette script giver spillere mulighed for at leje køretøjer via en NPC placeret på kortet. Du kan tilpasse NPC'ens koordinater, køretøjets spawn lokationer, lejepriser og tilgængelige køretøjer i `config.lua` filen. Derudover kan spillere få penge tilbage, når de afleverer det lejede køretøj, og mængden kan justeres i `Server/main.lua` filen.
 
+## ✨ Funktioner
 
-✨ Funktioner:
-Køretøjsudlejning via NPC: Lej køretøjer direkte fra en NPC på kortet.
-Ændr NPC'ens koordinater/placering.
-Indstil køretøjets spawn koordinater.
-Juster lejepriserne.
-Tilpas hvilke køretøjer der er tilgængelige for leje.
-Refunderingssystem: Spillere kan få penge tilbage, når de afleverer det lejede køretøj. Refunderingsbeløbet kan justeres i scriptet.
-QBCore kompatibilitet: Bygget specifikt til QBCore, ved brug af qbcore target.
+- **Køretøjsudlejning via NPC**: Lej køretøjer direkte fra en NPC på kortet.
+- **Fuldstændig konfigurerbar**:
+  - Ændr NPC'ens koordinater/placering.
+  - Indstil køretøjets spawn koordinater.
+  - Juster lejepriserne.
+  - Tilpas hvilke køretøjer der er tilgængelige for leje.
+- **Refunderingssystem**: Spillere kan få penge tilbage, når de afleverer det lejede køretøj. Refunderingsbeløbet kan justeres i scriptet.
+- **QBCore kompatibilitet**: Bygget specifikt til QBCore, ved brug af qbcore target.
 
+## 🔧 Konfiguration
 
-🔧 Konfiguration:
-NPC Model: Definer NPC'ens model.
-NPC Placering: Indstil NPC'ens placering på kortet.
-NPC Heading: Angiv NPC'ens retning.
-Tilgængelige Køretøjer: List og ændr hvilke køretøjer der kan lejes.
-Køretøjets Spawn Placering: Definer hvor det lejede køretøj vil dukke op.
-Køretøjets Heading: Angiv køretøjets retning.
-Lejepris: Juster omkostningerne for at leje hvert køretøj.
-Blip Indstillinger: Tilpas blip-indstillingerne for kortmarkeringen.
+### config.lua
 
-(Server/main.lua)
-Refunderingsbeløb: Juster mængden af penge, der gives tilbage ved returnering af køretøjet på linje 20.
+- **NPC Model**: Definer NPC'ens model.
+- **NPC Placering**: Indstil NPC'ens placering på kortet.
+- **NPC Heading**: Angiv NPC'ens retning.
+- **Tilgængelige Køretøjer**: List og ændr hvilke køretøjer der kan lejes.
+- **Køretøjets Spawn Placering**: Definer hvor det lejede køretøj vil dukke op.
+- **Køretøjets Heading**: Angiv køretøjets retning.
+- **Lejepris**: Juster omkostningerne for at leje hvert køretøj.
+- **Blip Indstillinger**: Tilpas blip-indstillingerne for kortmarkeringen.
 
-BASIC EXAMPLE PÅ CONFIG. (DETTE ER UDE PÅ CAYO PERICO ØEN RET KORDINATER INDEN INDSÆTTELSE).
+```lua
 Config = {}
 
 Config.NPCModel = 'a_m_y_beach_01'
@@ -53,6 +53,6 @@ Config.Blip = {
 }
 
 
-############IKKE VIGTIGT LICENSE FOR OPLÆG:############
+
 📜 Licens
 Dette projekt er licenseret under MIT-licensen. Se LICENSE-filen for detaljer.
